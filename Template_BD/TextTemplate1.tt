@@ -51,8 +51,7 @@ namespace teste.declare
 --\TABLE--
     }
 }
-".TrimStart('\r', '\n');
-
+            ".Trim('\r', '\n', ' ', '\t');
 
 
             Match m1 = Regex.Match(template, @"^(.*)--TABLE--\r\n(.*)--\\TABLE--\r\n(.*)$", RegexOptions.Singleline);
